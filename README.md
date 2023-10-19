@@ -41,4 +41,41 @@
 ### ***Шаг двенадцать***
 Необходимо сделать откат коммита. Делается это с помощью _git revert HEAD --no-edit_( _См. screen_folder/ЛБ6_15.PNG_).
 
-
+# ***Лог команд***
+git config --global user.name "4218 Романькова Е. А."
+git config --global user.email "euro1303@gmail.com"
+cd Lab6_OP
+git clone https://github.com/Ph1lls/LR6.git
+ls -1
+cd LR6
+ls - 1
+git pull
+ls -1
+git reflog
+git log
+git checkout Lab6_file
+ls -1
+git checkout master
+ls -1
+git merge Lab6_file
+ls -1
+git branch -d Lab6_file
+nano first.txt
+git status
+git add first.txt
+git status
+git commit -m "Первое изменение"
+git push
+nano second.txt
+git status
+git add second.txt
+git status
+git commit -m "Второе изменение"
+nano third.txt
+git status
+git add second.txt
+git status
+git push
+git commit -m "Третье изменение"
+git push
+git revert HEAD --no-edit
